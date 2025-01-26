@@ -1,8 +1,10 @@
 import time
+import streamlit as st
 from openai import OpenAI
 
-# إعداد مفتاح OpenAI API ومعرف المساعد
-OPENAI_API_KEY = "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"  # استبدل بمفتاح OpenAI الخاص بك
+# استدعاء مفتاح OpenAI API ومعرف المساعد من Streamlit Secrets
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]  # مفتاح OpenAI
+
 ASSISTANT_ID = "asst_6oadhNqT43dLfCQVhOndBvnD"  # معرف المساعد الخاص بك
 
 # إنشاء عميل OpenAI باستخدام المفتاح

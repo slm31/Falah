@@ -84,3 +84,5 @@ if st.button("🎁 احصل على لعبتك"):
 
 # إضافة فاصل زخرفي في النهاية
 st.markdown("<hr style='border: 2px solid #FF5733;'>", unsafe_allow_html=True)
+
+
