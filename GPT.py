@@ -5,7 +5,7 @@ from openai import OpenAI
 # استدعاء مفتاح OpenAI API ومعرف المساعد من Streamlit Secrets
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]  # مفتاح OpenAI
 
-ASSISTANT_ID = "asst_6oadhNqT43dLfCQVhOndBvnD"  # معرف المساعد الخاص بك
+ASSISTANT_ID = st.secrets["ASSISTANT_ID"]  # معرف المساعد
 
 # إنشاء عميل OpenAI باستخدام المفتاح
 client = OpenAI(api_key=OPENAI_API_KEY)
